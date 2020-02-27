@@ -135,6 +135,34 @@ a {
     max-width: 80%;
 }
 
+/*Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/*Position the "next button to the right */
+.next{
+    right: 0;
+    border-radius: 3px 0 0  3px;
+}
+
+.prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
 @media all and (min-width:768px){
     .main-content{ flex-direction: row; overflow:hidden;}
     .thumbnail-list{ flex-direction: column; order: 0; margin-left: 20px; padding: 0 35px;}
